@@ -1,0 +1,385 @@
+        * {
+            /* reglas generales */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto Slab', serif;
+            font-size: 16px;
+        }
+        
+        * h1 {
+            font-size: 3rem;
+            color: aliceblue;
+            background-color: rgb(127, 161, 255);
+            text-align: center;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+        /*  estilo header */
+        
+        header {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo {
+            width: 30%;
+        }
+        
+        #logo_principal {
+            width: 40%;
+        }
+        
+        nav {
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        header a {
+            position: relative;
+            width: 30%;
+        }
+        
+        .navegacion ul {
+            display: flex;
+        }
+        
+        .navegacion li {
+            display: inline-block;
+            list-style-type: none;
+        }
+        
+        .navegacion li a {
+            text-decoration: none;
+            font-size: x-large;
+            margin: 10px;
+            color: rgb(127, 161, 255);
+        }
+        
+        .navegacion li a:hover {
+            font-weight: bold;
+        }
+        
+        .imagen__principal {
+            display: block;
+        }
+        
+        .imagen__principal .imagen__principal__cabecera {
+            width: 98vw;
+        }
+        
+        .contenedor_grid {
+            background-color: aliceblue;
+            color: rgba(13, 78, 164, 0.142);
+        }
+        /* estilo cartones servicios*/
+        
+        .servicio {
+            margin-top: 10%;
+            margin-bottom: 10%;
+        }
+        
+        #servicios__parrafo {
+            font-size: x-large;
+            color: rgb(127, 161, 255);
+            text-align: center;
+        }
+        
+        .estructura__index__cartones {
+            margin-top: 10%;
+            grid-area: index__cartones;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 5px;
+            border-radius: 20%;
+        }
+        /* estilo cards */
+        
+        .estructura__index__cartones__signo {
+            width: 50px;
+        }
+        
+        .signo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .estructura__index__cartones__contenedor1 {
+            background-color: rgb(127, 161, 255);
+        }
+        
+        .estructura__index__cartones__contenedor2 {
+            background-color: rgb(127, 161, 255);
+        }
+        
+        .estructura__index__cartones__lista {
+            background-color: rgb(127, 161, 255);
+        }
+        
+        .estructura__index__cartones__lista li {
+            background-color: rgb(127, 161, 255);
+        }
+        
+        .porque {
+            margin-top: 10%;
+            margin-bottom: 10%;
+        }
+        /*estilos cualidades*/
+        
+        .cualidades {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .rounded-circle {
+            width: 200px;
+        }
+        
+        .cualidad__divs {
+            display: inline;
+            width: 10%;
+            margin: 10%;
+            justify-content: center;
+            align-items: first baseline;
+        }
+        
+        .cualidad__divs h3 .lead {
+            font-size: larger;
+            text-align: center;
+            color: rgb(54, 54, 192);
+        }
+        
+        .container p {
+            font-size: medium;
+            color: rgb(54, 54, 192);
+        }
+        /* estilo corte*/
+        
+        .corte {
+            display: flex;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            justify-content: center;
+            align-items: center;
+            gap: 20%;
+            background-color: rgb(127, 161, 255);
+        }
+        
+        .corte__imagen {
+            width: 50%;
+        }
+        
+        .corte__imagen img {
+            width: 600px;
+        }
+        
+        .corte__texto {
+            display: flex;
+            background-color: rgb(127, 161, 255);
+            width: 50%;
+        }
+        
+        .corte__texto__titulo h2 {
+            font-size: x-large;
+            color: aliceblue;
+        }
+        
+        .corte__texto__subtitulo {
+            margin-top: 5%;
+            margin-bottom: 5%;
+            color: aliceblue;
+        }
+        
+        .corte__texto__subtitulo h3 {
+            font-size: medium;
+            color: aliceblue;
+        }
+        /* pie de pagina*/
+        
+        footer {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-areas: "texto imagenes redes" "texto  imagenes redes" "texto imagenes redes" "texto  imagenes redes";
+        }
+        
+        .pie__pagina__texto {
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            grid-area: texto;
+            font-size: medium;
+        }
+        
+        .pie__pagina__texto p {
+            margin: 3%;
+        }
+        
+        .pie__imagenes {
+            width: 33%;
+            grid-area: imagenes;
+            display: block;
+            justify-self: center;
+            gap: 3px;
+        }
+        
+        .pie__redes {
+            display: block;
+            justify-self: center;
+            grid-area: redes;
+        }
+        
+        .pie__imagenes img {
+            display: block;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+        }
+        
+        .pie__redes img,
+        .pie__redes a img {
+            width: 50px;
+        }
+        /*estilo pagina servicios*/
+        
+        .servicios__tratamientos {
+            display: flex;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+        
+        .servicios__tratamientos__texto p {
+            margin: 5%;
+        }
+        
+        .servicios__tratamientos__texto {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40%;
+        }
+        
+        .servicios__tratamientos__imagenes img {
+            width: 300px;
+        }
+        
+        .servicios__tratamientos__texto p {
+            color: rgb(127, 161, 255);
+        }
+        
+        .servicios__subtitulo {
+            color: rgb(127, 161, 255);
+        }
+        
+        .servicios__tratamientos__imagenes {
+            width: 60%;
+            display: grid;
+            margin-left: 3%;
+            grid-template-columns: repeat(3, 200px);
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: " tto1 . tto2" ". tto3 .";
+        }
+        
+        #tratamiento__osteo {
+            color: rgb(127, 161, 255);
+        }
+        
+        #tto1 {
+            grid-area: tto1;
+        }
+        
+        #tto2 {
+            grid-area: tto2;
+        }
+        
+        #tto3 {
+            grid-area: tto3;
+        }
+        
+        *.servicios__fisioterapia__texto {
+            color: antiquewhite;
+            background-color: rgb(127, 161, 255);
+            ;
+        }
+        
+        .servicios__fisioterapia__imagen {
+            display: flex;
+        }
+        
+        .servicios__fisioterapia__imagen img {
+            width: 33%;
+            margin-left: 2px;
+            margin-right: 2px;
+        }
+        
+        .servicios__fisioterapia__texto {
+            display: block;
+            justify-items: center;
+            align-items: center;
+        }
+        
+        .servicios__fisioterapia__texto h3 {
+            margin-left: 10px;
+            text-align: center;
+        }
+        
+        .servicios__fisioterapia__texto p {
+            margin-left: 10px;
+        }
+        
+        .corte__texto__subtitulo p {
+            justify-content: flex-start;
+            margin: 3%;
+            color: aliceblue;
+        }
+        
+        @media screen and (max-width:480px) {
+            header {
+                display: block;
+            }
+            nav {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #logo_principal {
+                width: 50%;
+            }
+            .estructura__index__cartones {
+                display: block;
+            }
+            .cualidades {
+                flex-wrap: wrap;
+            }
+            .corte {
+                display: block;
+            }
+            footer {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-areas: "texto imagenes redes " "texto imagenes redes" "texto imagenes redes";
+            }
+            /*servicios*/
+            .servicios__tratamientos {
+                display: contents;
+                margin-top: 5%;
+                margin-bottom: 5%;
+            }
+            .servicios__tratamientos__texto p {
+                margin: 5%;
+            }
+            .servicios__tratamientos__texto {
+                display: contents;
+                justify-content: center;
+                align-items: center;
+            }
+            .servicios__tratamientos__imagenes {
+                display: block;
+            }
+        }
