@@ -1,0 +1,46 @@
+@media screen and (max-width:480px) {
+    header {
+        display: block;
+    }
+    nav {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #logo_principal {
+        width: 50%;
+    }
+    .estructura__index__cartones {
+        display: block;
+    }
+    .cualidades {
+        flex-wrap: wrap;
+    }
+    .corte {
+        display: block;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "texto imagenes redes " "texto imagenes redes" "texto imagenes redes";
+    }
+    /*servicios*/
+    .servicios__tratamientos {
+        display: contents;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .servicios__tratamientos__texto p {
+        margin: 5%;
+    }
+    .servicios__tratamientos__texto {
+        display: contents;
+        justify-content: center;
+        align-items: center;
+    }
+    .servicios__tratamientos__imagenes {
+        display: block;
+    }
+}

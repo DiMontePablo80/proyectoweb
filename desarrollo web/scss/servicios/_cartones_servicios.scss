@@ -1,0 +1,109 @@
+/* estilo cartones servicios*/
+
+.servicio {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#servicios__parrafo {
+    font-size: x-large;
+    color: rgb(127, 161, 255);
+    text-align: center;
+}
+
+.estructura__index__cartones {
+    margin-top: 10%;
+    grid-area: index__cartones;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 20%;
+}
+
+
+/*estilo pagina servicios*/
+
+.servicios__tratamientos {
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.servicios__tratamientos__texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    p {
+        margin: 5%;
+        color: rgb(127, 161, 255);
+    }
+}
+
+.servicios__tratamientos__imagenes {
+    width: 60%;
+    display: grid;
+    margin-left: 3%;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: " tto1 . tto2" ". tto3 .";
+    img {
+        width: 300px;
+    }
+}
+
+.servicios__subtitulo {
+    color: rgb(127, 161, 255);
+}
+
+#tratamiento__osteo {
+    color: rgb(127, 161, 255);
+}
+
+#tto1 {
+    grid-area: tto1;
+}
+
+#tto2 {
+    grid-area: tto2;
+}
+
+#tto3 {
+    grid-area: tto3;
+}
+
+*.servicios__fisioterapia__texto {
+    color: antiquewhite;
+    background-color: rgb(127, 161, 255);
+    &__servicios__fisioterapia__imagen {
+        img {
+            display: flex;
+            width: 33%;
+            margin-left: 2px;
+            margin-right: 2px;
+        }
+    }
+    &__servicios__fisioterapia__texto {
+        display: block;
+        justify-items: center;
+        align-items: center;
+    }
+    &__servicios__fisioterapia__texto {
+        h3 {
+            margin-left: 10px;
+            text-align: center;
+        }
+    }
+    &__servicios__fisioterapia__texto {
+        p {
+            margin-left: 10px;
+        }
+    }
+}
+
+.corte__texto__subtitulo p {
+    justify-content: flex-start;
+    margin: 3%;
+    color: aliceblue;
+}

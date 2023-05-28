@@ -1,0 +1,137 @@
+* h1 {
+    font-size: 3rem;
+    color: aliceblue;
+    background-color: rgb(127, 161, 255);
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+/*  estilo header */
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 30%;
+}
+
+#logo_principal {
+    width: 40%;
+}
+
+nav {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header {
+    a {
+        position: relative;
+        width: 30%;
+    }
+}
+
+.navegacion {
+    ul {
+        display: flex;
+    }
+}
+
+.navegacion {
+    li {
+        display: inline-block;
+        list-style-type: none;
+    }
+}
+
+.navegacion {
+    li {
+        a {
+            text-decoration: none;
+            font-size: x-large;
+            margin: 10px;
+            color: rgb(127, 161, 255);
+        }
+    }
+}
+
+.navegacion {
+    li {
+        a:hover {
+            font-weight: bold;
+        }
+    }
+}
+
+.imagen__principal {
+    display: block;
+}
+
+.imagen__principal__cabecera {
+    width: 98vw;
+}
+
+.contenedor_grid {
+    background-color: aliceblue;
+    color: rgba(13, 78, 164, 0.142);
+}
+
+
+/* pie de pagina*/
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "texto imagenes redes" "texto  imagenes redes" "texto imagenes redes" "texto  imagenes redes";
+}
+
+.pie__pagina__texto {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    grid-area: texto;
+    font-size: medium;
+}
+
+.pie__imagenes {
+    width: 33%;
+    grid-area: imagenes;
+    display: block;
+    justify-self: center;
+    gap: 3px;
+}
+
+.pie__redes {
+    display: block;
+    justify-self: center;
+    grid-area: redes;
+}
+
+.pie__imagenes {
+    img {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+    }
+}
+
+.pie__redes {
+    img {
+        width: 50px;
+    }
+}
+
+.pie__redes {
+    a {
+        img {
+            width: 50px;
+        }
+    }
+}
