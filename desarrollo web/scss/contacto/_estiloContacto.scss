@@ -1,0 +1,12 @@
+.contenedor__imagen__contacto {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    .texto__imagen__contacto {
+        position: absolute;
+        text-align: center;
+        height: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
