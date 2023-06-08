@@ -1,15 +1,12 @@
 @media screen and (max-width:480px) {
     header {
-        display: block;
-    }
-    nav {
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #logo_principal {
-        width: 50%;
+        /*display: block;*/
+        #logo_principal {
+            width: 70%;
+        }
+        .container-fluid {
+            display: none;
+        }
     }
     .estructura__index__cartones {
         display: block;
@@ -22,9 +19,49 @@
     }
     footer {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: "texto imagenes redes " "texto imagenes redes" "texto imagenes redes";
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+        grid-template-areas: "texto" "imagenes""redes";
+        .pie_pagina__texto {
+            p {
+                font-size: small;
+            }
+        }
+    }
+    .pie__pagina__texto {
+        display: block;
+        grid-area: texto;
+        font-size: medium;
+        text-align: center;
+        margin: 2px;
+    }
+    .pie__imagenes {
+        display: block;
+        margin-left: 10%;
+        margin-top: 2%;
+        img {
+            display: block;
+            width: 50px;
+            margin-left: 20%;
+            margin-bottom: 5px;
+        }
+    }
+    .pie__redes {
+        display: block;
+        justify-self: center;
+        grid-area: redes;
+    }
+    .pie__redes {
+        img {
+            width: 20px;
+            font-size: small;
+        }
+        a {
+            font-size: small;
+            img {
+                width: 20px;
+            }
+        }
     }
     /*servicios*/
     .servicios__tratamientos {
@@ -41,6 +78,65 @@
         align-items: center;
     }
     .servicios__tratamientos__imagenes {
+        display: flex;
+        flex-direction: column;
+    }
+    /* página contacto*/
+    .contenedor__imagen__contacto {
+        .texto__imagen__contacto {
+            h2 {
+                font-size: 23px;
+            }
+        }
+    }
+    .pie__imagenes {
+        width: 0%;
+        grid-area: imagenes;
+        display: flex;
+        justify-self: unset;
+        gap: 6px;
+        margin-left: 10%;
+        margin-top: 2%;
+    }
+    /* estilo faqs */
+    article {
+        h4 {
+            color: rgb(127, 161, 255);
+            margin-left: 2%;
+        }
+        .seccion__preguntas {
+            display: block;
+            .seccion__preguntas__imagen {
+                display: block;
+            }
+        }
+        .preguntas__texto {
+            display: block;
+            width: 100%;
+            p {
+                margin: 2px;
+                padding: 5px;
+                text-align: justify;
+            }
+        }
+    }
+    /* estilo kine-online */
+    .servicios__tratamiento__imagen__online {
         display: block;
+        width: 100%;
+        img {
+            width: 100%;
+            margin: 1%;
+        }
+    }
+    .form__online {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        background-color: aliceblue;
+        color: rgb(127, 161, 255);
+        form {
+            margin: 4%;
+        }
     }
 }

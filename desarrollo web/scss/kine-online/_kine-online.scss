@@ -1,0 +1,52 @@
+@import "../servicios/cartones_servicios";
+@import "../general";
+.servicios__tratamientos__texto__online {
+    @extend .servicios__tratamientos__texto;
+    width: 100%;
+    background-color: rgb(127, 161, 255);
+    p {
+        font-size: larger;
+        color: aliceblue;
+        background-color: rgb(127, 161, 255);
+        margin: 1%;
+        font-size: large;
+        margin: 1rem;
+    }
+}
+
+.online__subtitulo {
+    font-size: 2rem;
+    color: rgb(127, 161, 255);
+}
+
+.onlinep {
+    font-size: 2rem;
+    color: rgb(127, 161, 255);
+}
+
+.servicios__tratamiento__imagen__online {
+    @extend .servicios__tratamientos__imagenes;
+    display: flex;
+    width: 60%;
+    img {
+        width: 100%;
+        margin: 1%;
+        border-radius: 5%;
+    }
+}
+
+#ser2 {
+    height: 82%;
+}
+
+.form__online {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    color: rgb(127, 161, 255);
+    width: 100%;
+    form {
+        width: 70%;
+    }
+}

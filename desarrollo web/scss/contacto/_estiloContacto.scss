@@ -5,8 +5,28 @@
     .texto__imagen__contacto {
         position: absolute;
         text-align: center;
-        height: 40%;
+        height: 180%;
         left: 50%;
         transform: translate(-50%, -50%);
+        h2 {
+            width: 125%;
+            font-size: 50px;
+            color: rgb(110 109 106);
+        }
+    }
+}
+
+.formulario__contacto {
+    display: flex;
+    margin-top: 2%;
+    background-color: rgb(241, 240, 238);
+    .formContacto {
+        width: 60%;
+    }
+    .formulario__ubicaciones {
+        width: 40%;
+        display: block;
+        margin-left: 20%;
+        margin-bottom: 3%;
     }
 }
