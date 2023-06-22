@@ -1,17 +1,9 @@
 @import "../servicios/cartones_servicios";
 @import "../general";
-.servicios__tratamientos__texto__online {
-    @extend .servicios__tratamientos__texto;
-    width: 100%;
-    background-color: rgb(127, 161, 255);
-    p {
-        font-size: larger;
-        color: aliceblue;
-        background-color: rgb(127, 161, 255);
-        margin: 1%;
-        font-size: large;
-        margin: 1rem;
-    }
+#h1kine {
+    margin-top: 0;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 .online__subtitulo {
@@ -19,20 +11,39 @@
     color: rgb(127, 161, 255);
 }
 
+.servicios__tratamientos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .servicios__tratamientos__texto__online {
+        @extend .servicios__tratamientos__texto;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        p {
+            font-size: x-large;
+            color: aliceblue;
+            background-color: rgb(127, 161, 255);
+            margin: 2%;
+            padding: 2%;
+        }
+        .servicios__tratamiento__imagen__online {
+            @extend .servicios__tratamientos__imagenes;
+            display: flex;
+            width: 60%;
+            img {
+                width: 100%;
+                margin: 1%;
+                border-radius: 5%;
+            }
+        }
+    }
+}
+
 .onlinep {
     font-size: 2rem;
     color: rgb(127, 161, 255);
-}
-
-.servicios__tratamiento__imagen__online {
-    @extend .servicios__tratamientos__imagenes;
-    display: flex;
-    width: 60%;
-    img {
-        width: 100%;
-        margin: 1%;
-        border-radius: 5%;
-    }
+    margin: 2%;
 }
 
 #ser2 {
@@ -43,8 +54,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aliceblue;
-    color: rgb(127, 161, 255);
+    background-color: rgb(127, 161, 255);
+    color: aliceblue;
     width: 100%;
     form {
         width: 70%;

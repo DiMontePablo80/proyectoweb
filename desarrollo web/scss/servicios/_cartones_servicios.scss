@@ -1,124 +1,120 @@
-/* estilo cartones servicios*/
-
-.servicio {
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
-
-#servicios__parrafo {
-    font-size: x-large;
-    color: rgb(127, 161, 255);
-    text-align: center;
-}
-
-.estructura__index__cartones {
-    margin-top: 10%;
-    grid-area: index__cartones;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5px;
-    border-radius: 20%;
-}
-
-
-/*estilo pagina servicios*/
-
-.servicios__tratamientos {
-    display: flex;
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-
-.servicios__tratamientos__texto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-    p {
-        margin: 5%;
+    /* estilo cartones servicios*/
+    
+    .servicio {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    
+    #servicios__parrafo {
+        font-size: x-large;
         color: rgb(127, 161, 255);
-    }
-}
-
-.servicios__tratamientos__imagenes {
-    width: 60%;
-    display: grid;
-    margin-left: 3%;
-    grid-template-columns: repeat(3, 200px);
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: " tto1 . tto2" ". tto3 .";
-    img {
-        width: 300px;
-        &:hover {
-            transform: scale(1.2, 1.2);
-        }
-    }
-}
-
-.servicios__subtitulo {
-    color: rgb(127, 161, 255);
-    margin-top: 3%;
-    margin-left: 2%;
-}
-
-#tratamiento__osteo {
-    color: rgb(127, 161, 255);
-    margin-top: 3%;
-    margin-left: 2%;
-}
-
-#tto1 {
-    grid-area: tto1;
-}
-
-#tto2 {
-    grid-area: tto2;
-}
-
-#tto3 {
-    grid-area: tto3;
-}
-
-*.servicios__fisioterapia__texto {
-    color: antiquewhite;
-    background-color: rgb(127, 161, 255);
-    margin-left: 11%;
-}
-
-.servicios__fisioterapia__imagen {
-    img {
-        display: flex;
-        width: 37%;
-        margin-left: 2px;
-        margin-right: 2px;
-        &:hover {
-            transform: scale(1.2, 1.2);
-        }
-    }
-}
-
-.servicios__fisioterapia__texto {
-    display: block;
-    justify-items: center;
-    align-items: center;
-}
-
-.servicios__fisioterapia__texto {
-    h3 {
-        margin-left: 10px;
         text-align: center;
     }
-}
-
-.servicios__fisioterapia__texto {
-    p {
-        margin-left: 10px;
+    
+    #tratamiento__osteo {
+        margin-left: 2%;
+        color: rgb(127, 161, 255);
+        font-size: xx-large;
     }
-}
-
-.corte__texto__subtitulo p {
-    justify-content: flex-start;
-    margin: 3%;
-    color: aliceblue;
-}
+    
+    .estructura__index__cartones {
+        margin-top: 5%;
+        grid-area: index__cartones;
+        display: flex;
+        margin-right: 1%;
+        margin-left: 1%;
+        flex-wrap: inherit;
+        justify-content: center;
+        border-radius: 20%;
+    }
+    /*estilo pagina servicios*/
+    
+    .servicios__tratamientos {
+        display: flex;
+        margin-bottom: 5%;
+        .servicios__tratamientos__texto {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 45%;
+            p {
+                margin: 5%;
+                color: rgb(127, 161, 255);
+                font-size: large;
+            }
+        }
+        .servicios__tratamientos__imagenes {
+            width: 55%;
+            display: block;
+            margin-left: 3%;
+            grid-template-columns: repeat(3, 200px);
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: " tto1 . tto2" ". tto3 .";
+            img {
+                width: 300px;
+                &:hover {
+                    transform: scale(1.2, 1.2);
+                }
+            }
+        }
+        .servicios__fisioterapia__texto {
+            display: block;
+            justify-items: center;
+            align-items: center;
+            p {
+                margin: 5%;
+                color: rgb(127, 161, 255);
+                font-size: large;
+            }
+            h3 {
+                margin-left: 5%;
+                color: rgb(127, 161, 255);
+            }
+            div {
+                ul {
+                    margin: 5%;
+                    color: rgb(127, 161, 255);
+                    font-size: large;
+                    li {
+                        color: rgb(127, 161, 255);
+                        font-size: large;
+                    }
+                }
+            }
+        }
+        .servicios__fisioterapia__imagen {
+            img {
+                display: flex;
+                width: 60%;
+                margin-left: 2px;
+                margin-right: 2px;
+                &:hover {
+                    transform: scale(1.2, 1.2);
+                }
+            }
+        }
+    }
+    
+    .servicios__subtitulo {
+        color: rgb(127, 161, 255);
+        margin-left: 5%;
+        #tratamiento__osteo {
+            color: rgb(127, 161, 255);
+            margin-top: 3%;
+            margin-left: 2%;
+        }
+        #tto1 {
+            grid-area: tto1;
+        }
+        #tto2 {
+            grid-area: tto2;
+        }
+        #tto3 {
+            grid-area: tto3;
+        }
+        .corte__texto__subtitulo p {
+            justify-content: flex-start;
+            margin: 3%;
+            color: aliceblue;
+        }
+    }

@@ -1,18 +1,32 @@
 @media screen and (max-width:480px) {
     header {
-        /*display: block;*/
+        .barra_nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
         #logo_principal {
-            width: 70%;
+            width: 100%;
+            text-align: center;
         }
-        .container-fluid {
-            display: none;
-        }
+    }
+    #h1home {
+        font-size: 2rem;
+        color: aliceblue;
+        background-color: rgb(127, 161, 255);
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
     }
     .estructura__index__cartones {
         display: block;
     }
     .cualidades {
         flex-wrap: wrap;
+        .imagen_cualidades {
+            margin-left: 25%;
+        }
     }
     .corte {
         display: block;
@@ -36,9 +50,12 @@
         margin: 2px;
     }
     .pie__imagenes {
-        display: block;
-        margin-left: 10%;
-        margin-top: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        align-items: center;
         img {
             display: block;
             width: 50px;
@@ -64,22 +81,37 @@
         }
     }
     /*servicios*/
-    .servicios__tratamientos {
-        display: contents;
+    .servicios__subtitulo {
+        color: rgb(127, 161, 255);
         margin-top: 5%;
+        text-align: center;
         margin-bottom: 5%;
     }
-    .servicios__tratamientos__texto p {
-        margin: 5%;
-    }
-    .servicios__tratamientos__texto {
-        display: contents;
-        justify-content: center;
-        align-items: center;
-    }
-    .servicios__tratamientos__imagenes {
+    .servicios__tratamientos {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .servicios__tratamientos__texto {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .servicios__tratamientos__imagenes {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+        }
+        .servicios__fisioterapia__imagen {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+        }
     }
     /* página contacto*/
     .contenedor__imagen__contacto {
@@ -89,16 +121,10 @@
             }
         }
     }
-    .pie__imagenes {
-        width: 0%;
-        grid-area: imagenes;
-        display: flex;
-        justify-self: unset;
-        gap: 6px;
-        margin-left: 10%;
-        margin-top: 2%;
-    }
     /* estilo faqs */
+    .h1faqs {
+        font-size: 2rem;
+    }
     article {
         h4 {
             color: rgb(127, 161, 255);
@@ -121,20 +147,35 @@
         }
     }
     /* estilo kine-online */
-    .servicios__tratamiento__imagen__online {
-        display: block;
-        width: 100%;
-        img {
+    #h1kine {
+        font-size: 2rem;
+    }
+    .onlinep {
+        font-size: 1.5rem;
+        color: rgb(127, 161, 255);
+        margin: 2%;
+    }
+    .servicios__tratamientos {
+        .servicios__tratamiento__imagen__online {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             width: 100%;
-            margin: 1%;
+            text-align: center;
+            img {
+                width: 99%;
+                margin: 1%;
+                text-align: center;
+            }
         }
     }
     .form__online {
         display: block;
         justify-content: center;
         align-items: center;
-        background-color: aliceblue;
-        color: rgb(127, 161, 255);
+        background-color: rgb(127, 161, 255);
+        color: aliceblue;
         form {
             margin: 4%;
         }

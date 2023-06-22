@@ -4,25 +4,31 @@ article {
     h4 {
         color: rgb(127, 161, 255);
         margin-bottom: 2%;
+        padding-left: 2%;
         text-align: left;
     }
     p {
-        margin-left: 5px;
+        font-size: large;
+        margin-right: 1%;
+        margin-left: 1%;
+        color: rgb(127, 161, 255);
     }
     .seccion__preguntas {
         display: flex;
         .seccion__preguntas__imagen img {
             display: block;
-            width: 98%;
+            width: 100%;
         }
     }
     .preguntas__texto {
-        width: 70%;
+        width: 80%;
         display: flex;
         p {
+            font-size: large;
             margin: 2px;
             padding: 5px;
-            text-align: justify;
+            text-align: start;
+            color: rgb(127, 161, 255);
         }
     }
 }

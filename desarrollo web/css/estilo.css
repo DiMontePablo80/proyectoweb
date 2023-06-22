@@ -13,7 +13,6 @@ h1 {
   color: aliceblue;
   background-color: rgb(127, 161, 255);
   text-align: center;
-  margin-top: 5%;
   margin-bottom: 5%;
 }
 
@@ -58,7 +57,7 @@ header .navbar .container-fluid :hover {
 }
 
 .imagen__principal__cabecera {
-  width: 99%;
+  width: 100%;
   height: 30%;
 }
 
@@ -144,8 +143,8 @@ footer {
   background-color: rgb(127, 161, 255);
 }
 .estructura__index__cartones__contenedor1 .porque {
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   background-color: white;
 }
 .estructura__index__cartones__contenedor1 .porque h2 {
@@ -182,6 +181,10 @@ footer {
   color: rgb(54, 54, 192);
 }
 
+.container__boton {
+  margin-bottom: 5%;
+}
+
 /* estilo corte*/
 .corte {
   display: flex;
@@ -189,7 +192,6 @@ footer {
   margin-bottom: 5%;
   justify-content: center;
   align-items: center;
-  gap: 20%;
   background-color: rgb(127, 161, 255);
 }
 
@@ -235,125 +237,137 @@ footer {
   text-align: center;
 }
 
+#tratamiento__osteo {
+  margin-left: 2%;
+  color: rgb(127, 161, 255);
+  font-size: xx-large;
+}
+
 .estructura__index__cartones {
-  margin-top: 10%;
+  margin-top: 5%;
   grid-area: index__cartones;
   display: flex;
-  flex-wrap: wrap;
+  margin-right: 1%;
+  margin-left: 1%;
+  flex-wrap: inherit;
   justify-content: center;
-  gap: 5px;
   border-radius: 20%;
 }
 
 /*estilo pagina servicios*/
 .servicios__tratamientos {
   display: flex;
-  margin-top: 5%;
   margin-bottom: 5%;
 }
-
-.servicios__tratamientos__texto, .servicios__tratamientos__texto__online {
+.servicios__tratamientos .servicios__tratamientos__texto, .servicios__tratamientos .servicios__tratamientos__texto__online {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40%;
+  width: 45%;
 }
-.servicios__tratamientos__texto p, .servicios__tratamientos__texto__online p {
+.servicios__tratamientos .servicios__tratamientos__texto p, .servicios__tratamientos .servicios__tratamientos__texto__online p {
   margin: 5%;
   color: rgb(127, 161, 255);
+  font-size: large;
 }
-
-.servicios__tratamientos__imagenes, .servicios__tratamiento__imagen__online {
-  width: 60%;
-  display: grid;
+.servicios__tratamientos .servicios__tratamientos__imagenes, .servicios__tratamientos .servicios__tratamientos__texto__online .servicios__tratamiento__imagen__online {
+  width: 55%;
+  display: block;
   margin-left: 3%;
   grid-template-columns: repeat(3, 200px);
   grid-template-rows: 1fr 1fr;
   grid-template-areas: " tto1 . tto2" ". tto3 .";
 }
-.servicios__tratamientos__imagenes img, .servicios__tratamiento__imagen__online img {
+.servicios__tratamientos .servicios__tratamientos__imagenes img, .servicios__tratamientos .servicios__tratamientos__texto__online .servicios__tratamiento__imagen__online img {
   width: 300px;
 }
-.servicios__tratamientos__imagenes img:hover, .servicios__tratamiento__imagen__online img:hover {
+.servicios__tratamientos .servicios__tratamientos__imagenes img:hover, .servicios__tratamientos .servicios__tratamientos__texto__online .servicios__tratamiento__imagen__online img:hover {
+  transform: scale(1.2, 1.2);
+}
+.servicios__tratamientos .servicios__fisioterapia__texto {
+  display: block;
+  justify-items: center;
+  align-items: center;
+}
+.servicios__tratamientos .servicios__fisioterapia__texto p {
+  margin: 5%;
+  color: rgb(127, 161, 255);
+  font-size: large;
+}
+.servicios__tratamientos .servicios__fisioterapia__texto h3 {
+  margin-left: 5%;
+  color: rgb(127, 161, 255);
+}
+.servicios__tratamientos .servicios__fisioterapia__texto div ul {
+  margin: 5%;
+  color: rgb(127, 161, 255);
+  font-size: large;
+}
+.servicios__tratamientos .servicios__fisioterapia__texto div ul li {
+  color: rgb(127, 161, 255);
+  font-size: large;
+}
+.servicios__tratamientos .servicios__fisioterapia__imagen img {
+  display: flex;
+  width: 60%;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+.servicios__tratamientos .servicios__fisioterapia__imagen img:hover {
   transform: scale(1.2, 1.2);
 }
 
 .servicios__subtitulo {
   color: rgb(127, 161, 255);
-  margin-top: 3%;
-  margin-left: 2%;
+  margin-left: 5%;
 }
-
-#tratamiento__osteo {
+.servicios__subtitulo #tratamiento__osteo {
   color: rgb(127, 161, 255);
   margin-top: 3%;
   margin-left: 2%;
 }
-
-#tto1 {
+.servicios__subtitulo #tto1 {
   grid-area: tto1;
 }
-
-#tto2 {
+.servicios__subtitulo #tto2 {
   grid-area: tto2;
 }
-
-#tto3 {
+.servicios__subtitulo #tto3 {
   grid-area: tto3;
 }
-
-*.servicios__fisioterapia__texto {
-  color: antiquewhite;
-  background-color: rgb(127, 161, 255);
-  margin-left: 11%;
-}
-
-.servicios__fisioterapia__imagen img {
-  display: flex;
-  width: 37%;
-  margin-left: 2px;
-  margin-right: 2px;
-}
-.servicios__fisioterapia__imagen img:hover {
-  transform: scale(1.2, 1.2);
-}
-
-.servicios__fisioterapia__texto {
-  display: block;
-  justify-items: center;
-  align-items: center;
-}
-
-.servicios__fisioterapia__texto h3 {
-  margin-left: 10px;
-  text-align: center;
-}
-
-.servicios__fisioterapia__texto p {
-  margin-left: 10px;
-}
-
-.corte__texto__subtitulo p {
+.servicios__subtitulo .corte__texto__subtitulo p {
   justify-content: flex-start;
   margin: 3%;
   color: aliceblue;
 }
 
 @media screen and (max-width: 480px) {
-  header {
-    /*display: block;*/
+  header .barra_nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   header #logo_principal {
-    width: 70%;
+    width: 100%;
+    text-align: center;
   }
-  header .container-fluid {
-    display: none;
+  #h1home {
+    font-size: 2rem;
+    color: aliceblue;
+    background-color: rgb(127, 161, 255);
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
   .estructura__index__cartones {
     display: block;
   }
   .cualidades {
     flex-wrap: wrap;
+  }
+  .cualidades .imagen_cualidades {
+    margin-left: 25%;
   }
   .corte {
     display: block;
@@ -375,9 +389,12 @@ footer {
     margin: 2px;
   }
   .pie__imagenes {
-    display: block;
-    margin-left: 10%;
-    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    align-items: center;
   }
   .pie__imagenes img {
     display: block;
@@ -401,37 +418,46 @@ footer {
     width: 20px;
   }
   /*servicios*/
-  .servicios__tratamientos {
-    display: contents;
+  .servicios__subtitulo {
+    color: rgb(127, 161, 255);
     margin-top: 5%;
+    text-align: center;
     margin-bottom: 5%;
   }
-  .servicios__tratamientos__texto p, .servicios__tratamientos__texto__online p {
-    margin: 5%;
-  }
-  .servicios__tratamientos__texto, .servicios__tratamientos__texto__online {
-    display: contents;
+  .servicios__tratamientos {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .servicios__tratamientos__imagenes, .servicios__tratamiento__imagen__online {
+  .servicios__tratamientos .servicios__tratamientos__texto, .servicios__tratamientos .servicios__tratamientos__texto__online {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .servicios__tratamientos .servicios__tratamientos__imagenes, .servicios__tratamientos .servicios__tratamientos__texto__online .servicios__tratamiento__imagen__online {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+  .servicios__tratamientos .servicios__fisioterapia__imagen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
   }
   /* página contacto*/
   .contenedor__imagen__contacto .texto__imagen__contacto h2 {
     font-size: 23px;
   }
-  .pie__imagenes {
-    width: 0%;
-    grid-area: imagenes;
-    display: flex;
-    justify-self: unset;
-    gap: 6px;
-    margin-left: 10%;
-    margin-top: 2%;
-  }
   /* estilo faqs */
+  .h1faqs {
+    font-size: 2rem;
+  }
   article h4 {
     color: rgb(127, 161, 255);
     margin-left: 2%;
@@ -452,20 +478,33 @@ footer {
     text-align: justify;
   }
   /* estilo kine-online */
-  .servicios__tratamiento__imagen__online {
-    display: block;
-    width: 100%;
+  #h1kine {
+    font-size: 2rem;
   }
-  .servicios__tratamiento__imagen__online img {
+  .onlinep {
+    font-size: 1.5rem;
+    color: rgb(127, 161, 255);
+    margin: 2%;
+  }
+  .servicios__tratamientos .servicios__tratamiento__imagen__online {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    text-align: center;
+  }
+  .servicios__tratamientos .servicios__tratamiento__imagen__online img {
+    width: 99%;
     margin: 1%;
+    text-align: center;
   }
   .form__online {
     display: block;
     justify-content: center;
     align-items: center;
-    background-color: aliceblue;
-    color: rgb(127, 161, 255);
+    background-color: rgb(127, 161, 255);
+    color: aliceblue;
   }
   .form__online form {
     margin: 4%;
@@ -491,7 +530,6 @@ footer {
 
 .formulario__contacto {
   display: flex;
-  margin-top: 2%;
   background-color: rgb(241, 240, 238);
 }
 .formulario__contacto .formContacto {
@@ -508,26 +546,32 @@ footer {
 article h4 {
   color: rgb(127, 161, 255);
   margin-bottom: 2%;
+  padding-left: 2%;
   text-align: left;
 }
 article p {
-  margin-left: 5px;
+  font-size: large;
+  margin-right: 1%;
+  margin-left: 1%;
+  color: rgb(127, 161, 255);
 }
 article .seccion__preguntas {
   display: flex;
 }
 article .seccion__preguntas .seccion__preguntas__imagen img {
   display: block;
-  width: 98%;
+  width: 100%;
 }
 article .preguntas__texto {
-  width: 70%;
+  width: 80%;
   display: flex;
 }
 article .preguntas__texto p {
+  font-size: large;
   margin: 2px;
   padding: 5px;
-  text-align: justify;
+  text-align: start;
+  color: rgb(127, 161, 255);
 }
 
 /* estilo cartones servicios*/
@@ -542,105 +586,105 @@ article .preguntas__texto p {
   text-align: center;
 }
 
+#tratamiento__osteo {
+  margin-left: 2%;
+  color: rgb(127, 161, 255);
+  font-size: xx-large;
+}
+
 .estructura__index__cartones {
-  margin-top: 10%;
+  margin-top: 5%;
   grid-area: index__cartones;
   display: flex;
-  flex-wrap: wrap;
+  margin-right: 1%;
+  margin-left: 1%;
+  flex-wrap: inherit;
   justify-content: center;
-  gap: 5px;
   border-radius: 20%;
 }
 
 /*estilo pagina servicios*/
 .servicios__tratamientos {
   display: flex;
-  margin-top: 5%;
   margin-bottom: 5%;
 }
-
-.servicios__tratamientos__texto, .servicios__tratamientos__texto__online {
+.servicios__tratamientos .servicios__tratamientos__texto, .servicios__tratamientos .servicios__tratamientos__texto__online {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40%;
+  width: 45%;
 }
-.servicios__tratamientos__texto p, .servicios__tratamientos__texto__online p {
+.servicios__tratamientos .servicios__tratamientos__texto p, .servicios__tratamientos .servicios__tratamientos__texto__online p {
   margin: 5%;
   color: rgb(127, 161, 255);
+  font-size: large;
 }
-
-.servicios__tratamientos__imagenes, .servicios__tratamiento__imagen__online {
-  width: 60%;
-  display: grid;
+.servicios__tratamientos .servicios__tratamientos__imagenes, .servicios__tratamientos .servicios__tratamientos__texto__online .servicios__tratamiento__imagen__online {
+  width: 55%;
+  display: block;
   margin-left: 3%;
   grid-template-columns: repeat(3, 200px);
   grid-template-rows: 1fr 1fr;
   grid-template-areas: " tto1 . tto2" ". tto3 .";
 }
-.servicios__tratamientos__imagenes img, .servicios__tratamiento__imagen__online img {
+.servicios__tratamientos .servicios__tratamientos__imagenes img, .servicios__tratamientos .servicios__tratamientos__texto__online .servicios__tratamiento__imagen__online img {
   width: 300px;
 }
-.servicios__tratamientos__imagenes img:hover, .servicios__tratamiento__imagen__online img:hover {
+.servicios__tratamientos .servicios__tratamientos__imagenes img:hover, .servicios__tratamientos .servicios__tratamientos__texto__online .servicios__tratamiento__imagen__online img:hover {
+  transform: scale(1.2, 1.2);
+}
+.servicios__tratamientos .servicios__fisioterapia__texto {
+  display: block;
+  justify-items: center;
+  align-items: center;
+}
+.servicios__tratamientos .servicios__fisioterapia__texto p {
+  margin: 5%;
+  color: rgb(127, 161, 255);
+  font-size: large;
+}
+.servicios__tratamientos .servicios__fisioterapia__texto h3 {
+  margin-left: 5%;
+  color: rgb(127, 161, 255);
+}
+.servicios__tratamientos .servicios__fisioterapia__texto div ul {
+  margin: 5%;
+  color: rgb(127, 161, 255);
+  font-size: large;
+}
+.servicios__tratamientos .servicios__fisioterapia__texto div ul li {
+  color: rgb(127, 161, 255);
+  font-size: large;
+}
+.servicios__tratamientos .servicios__fisioterapia__imagen img {
+  display: flex;
+  width: 60%;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+.servicios__tratamientos .servicios__fisioterapia__imagen img:hover {
   transform: scale(1.2, 1.2);
 }
 
 .servicios__subtitulo {
   color: rgb(127, 161, 255);
-  margin-top: 3%;
-  margin-left: 2%;
+  margin-left: 5%;
 }
-
-#tratamiento__osteo {
+.servicios__subtitulo #tratamiento__osteo {
   color: rgb(127, 161, 255);
   margin-top: 3%;
   margin-left: 2%;
 }
-
-#tto1 {
+.servicios__subtitulo #tto1 {
   grid-area: tto1;
 }
-
-#tto2 {
+.servicios__subtitulo #tto2 {
   grid-area: tto2;
 }
-
-#tto3 {
+.servicios__subtitulo #tto3 {
   grid-area: tto3;
 }
-
-*.servicios__fisioterapia__texto {
-  color: antiquewhite;
-  background-color: rgb(127, 161, 255);
-  margin-left: 11%;
-}
-
-.servicios__fisioterapia__imagen img {
-  display: flex;
-  width: 37%;
-  margin-left: 2px;
-  margin-right: 2px;
-}
-.servicios__fisioterapia__imagen img:hover {
-  transform: scale(1.2, 1.2);
-}
-
-.servicios__fisioterapia__texto {
-  display: block;
-  justify-items: center;
-  align-items: center;
-}
-
-.servicios__fisioterapia__texto h3 {
-  margin-left: 10px;
-  text-align: center;
-}
-
-.servicios__fisioterapia__texto p {
-  margin-left: 10px;
-}
-
-.corte__texto__subtitulo p {
+.servicios__subtitulo .corte__texto__subtitulo p {
   justify-content: flex-start;
   margin: 3%;
   color: aliceblue;
@@ -651,7 +695,6 @@ h1 {
   color: aliceblue;
   background-color: rgb(127, 161, 255);
   text-align: center;
-  margin-top: 5%;
   margin-bottom: 5%;
 }
 
@@ -696,7 +739,7 @@ header .navbar .container-fluid :hover {
 }
 
 .imagen__principal__cabecera {
-  width: 99%;
+  width: 100%;
   height: 30%;
 }
 
@@ -758,17 +801,10 @@ footer {
   transform: scale(1.2, 1.2);
 }
 
-.servicios__tratamientos__texto__online {
-  width: 100%;
-  background-color: rgb(127, 161, 255);
-}
-.servicios__tratamientos__texto__online p {
-  font-size: larger;
-  color: aliceblue;
-  background-color: rgb(127, 161, 255);
-  margin: 1%;
-  font-size: large;
-  margin: 1rem;
+#h1kine {
+  margin-top: 0;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .online__subtitulo {
@@ -776,19 +812,37 @@ footer {
   color: rgb(127, 161, 255);
 }
 
-.onlinep {
-  font-size: 2rem;
-  color: rgb(127, 161, 255);
+.servicios__tratamientos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.servicios__tratamiento__imagen__online {
+.servicios__tratamientos .servicios__tratamientos__texto__online {
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+.servicios__tratamientos .servicios__tratamientos__texto__online p {
+  font-size: x-large;
+  color: aliceblue;
+  background-color: rgb(127, 161, 255);
+  margin: 2%;
+  padding: 2%;
+}
+.servicios__tratamientos .servicios__tratamientos__texto__online .servicios__tratamiento__imagen__online {
   display: flex;
   width: 60%;
 }
-.servicios__tratamiento__imagen__online img {
+.servicios__tratamientos .servicios__tratamientos__texto__online .servicios__tratamiento__imagen__online img {
   width: 100%;
   margin: 1%;
   border-radius: 5%;
+}
+
+.onlinep {
+  font-size: 2rem;
+  color: rgb(127, 161, 255);
+  margin: 2%;
 }
 
 #ser2 {
@@ -799,8 +853,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: aliceblue;
-  color: rgb(127, 161, 255);
+  background-color: rgb(127, 161, 255);
+  color: aliceblue;
   width: 100%;
 }
 .form__online form {
@@ -808,20 +862,32 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
-  header {
-    /*display: block;*/
+  header .barra_nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   header #logo_principal {
-    width: 70%;
+    width: 100%;
+    text-align: center;
   }
-  header .container-fluid {
-    display: none;
+  #h1home {
+    font-size: 2rem;
+    color: aliceblue;
+    background-color: rgb(127, 161, 255);
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
   .estructura__index__cartones {
     display: block;
   }
   .cualidades {
     flex-wrap: wrap;
+  }
+  .cualidades .imagen_cualidades {
+    margin-left: 25%;
   }
   .corte {
     display: block;
@@ -843,9 +909,12 @@ footer {
     margin: 2px;
   }
   .pie__imagenes {
-    display: block;
-    margin-left: 10%;
-    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    align-items: center;
   }
   .pie__imagenes img {
     display: block;
@@ -869,37 +938,46 @@ footer {
     width: 20px;
   }
   /*servicios*/
-  .servicios__tratamientos {
-    display: contents;
+  .servicios__subtitulo {
+    color: rgb(127, 161, 255);
     margin-top: 5%;
+    text-align: center;
     margin-bottom: 5%;
   }
-  .servicios__tratamientos__texto p, .servicios__tratamientos__texto__online p {
-    margin: 5%;
-  }
-  .servicios__tratamientos__texto, .servicios__tratamientos__texto__online {
-    display: contents;
+  .servicios__tratamientos {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .servicios__tratamientos__imagenes, .servicios__tratamiento__imagen__online {
+  .servicios__tratamientos .servicios__tratamientos__texto, .servicios__tratamientos .servicios__tratamientos__texto__online {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .servicios__tratamientos .servicios__tratamientos__imagenes, .servicios__tratamientos .servicios__tratamientos__texto__online .servicios__tratamiento__imagen__online {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+  .servicios__tratamientos .servicios__fisioterapia__imagen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
   }
   /* página contacto*/
   .contenedor__imagen__contacto .texto__imagen__contacto h2 {
     font-size: 23px;
   }
-  .pie__imagenes {
-    width: 0%;
-    grid-area: imagenes;
-    display: flex;
-    justify-self: unset;
-    gap: 6px;
-    margin-left: 10%;
-    margin-top: 2%;
-  }
   /* estilo faqs */
+  .h1faqs {
+    font-size: 2rem;
+  }
   article h4 {
     color: rgb(127, 161, 255);
     margin-left: 2%;
@@ -920,20 +998,33 @@ footer {
     text-align: justify;
   }
   /* estilo kine-online */
-  .servicios__tratamiento__imagen__online {
-    display: block;
-    width: 100%;
+  #h1kine {
+    font-size: 2rem;
   }
-  .servicios__tratamiento__imagen__online img {
+  .onlinep {
+    font-size: 1.5rem;
+    color: rgb(127, 161, 255);
+    margin: 2%;
+  }
+  .servicios__tratamientos .servicios__tratamiento__imagen__online {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    text-align: center;
+  }
+  .servicios__tratamientos .servicios__tratamiento__imagen__online img {
+    width: 99%;
     margin: 1%;
+    text-align: center;
   }
   .form__online {
     display: block;
     justify-content: center;
     align-items: center;
-    background-color: aliceblue;
-    color: rgb(127, 161, 255);
+    background-color: rgb(127, 161, 255);
+    color: aliceblue;
   }
   .form__online form {
     margin: 4%;
