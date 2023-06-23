@@ -16,6 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 2%;
     .servicios__tratamientos__texto__online {
         @extend .servicios__tratamientos__texto;
         justify-content: center;
