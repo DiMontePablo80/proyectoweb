@@ -341,7 +341,147 @@ footer {
   color: aliceblue;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 330px) {
+  header .barra_nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  header #logo_principal {
+    width: 100%;
+    text-align: center;
+  }
+  #h1home {
+    font-size: 2rem;
+    color: aliceblue;
+    background-color: rgb(127, 161, 255);
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .estructura__index__cartones {
+    display: block;
+  }
+  .cualidades {
+    flex-wrap: wrap;
+  }
+  .cualidades .imagen_cualidades {
+    margin-left: 25%;
+  }
+  .corte {
+    display: block;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    grid-template-areas: "texto" "imagenes" "redes";
+  }
+  footer .pie_pagina__texto p {
+    font-size: small;
+  }
+  /*estilo contacto*/
+  .contenedor__imagen__contacto .texto__imagen__contacto {
+    height: 200%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+  }
+  .contenedor__imagen__contacto .texto__imagen__contacto h2 {
+    width: 125%;
+    font-size: 21px;
+    color: rgb(110, 109, 106);
+  }
+  /*servicios*/
+  .servicios__subtitulo {
+    color: rgb(127, 161, 255);
+    margin-top: 5%;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  .servicios__tratamientos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .servicios__tratamientos .servicios__tratamientos__texto, .servicios__tratamientos .servicios__tratamientos__texto__online {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .servicios__tratamientos .servicios__tratamientos__imagenes, .servicios__tratamientos .servicios__tratamientos__texto__online .servicios__tratamiento__imagen__online {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+  .servicios__tratamientos .servicios__fisioterapia__imagen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+  /* estilo kine-online */
+  #h1kine {
+    font-size: 2rem;
+  }
+  .onlinep {
+    font-size: 1rem;
+    color: rgb(127, 161, 255);
+    margin: 6%;
+  }
+  .servicios__tratamientos .servicios__tratamiento__imagen__online {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  .servicios__tratamientos .servicios__tratamiento__imagen__online img {
+    width: 99%;
+    margin: 1%;
+    text-align: center;
+  }
+  .form__online {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(127, 161, 255);
+    color: aliceblue;
+  }
+  .form__online form {
+    margin: 4%;
+  }
+  /* estilo faqs */
+  .h1faqs {
+    font-size: 2rem;
+  }
+  article h4 {
+    color: rgb(127, 161, 255);
+    margin-left: 2%;
+  }
+  article .seccion__preguntas {
+    display: block;
+  }
+  article .seccion__preguntas .seccion__preguntas__imagen {
+    display: block;
+  }
+  article .preguntas__texto {
+    display: block;
+    width: 100%;
+  }
+  article .preguntas__texto p {
+    margin: 2px;
+    padding: 5px;
+    text-align: justify;
+  }
+}
+@media screen and (min-width: 331px) and (max-width: 480px) {
   header .barra_nav {
     display: flex;
     flex-direction: column;
@@ -452,13 +592,13 @@ footer {
   }
   /* página contacto*/
   .contenedor__imagen__contacto .texto__imagen__contacto {
-    height: 186%;
+    height: 175%;
     left: 45%;
     transform: translate(-50%, -50%);
   }
   .contenedor__imagen__contacto .texto__imagen__contacto h2 {
     width: 125%;
-    font-size: 23px;
+    font-size: 22px;
     color: rgb(110, 109, 106);
   }
   /* estilo faqs */
@@ -517,6 +657,182 @@ footer {
     margin: 4%;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 831px) {
+  header .barra_nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  header #logo_principal {
+    width: 100%;
+    text-align: center;
+  }
+  #h1home {
+    font-size: 2rem;
+    color: aliceblue;
+    background-color: rgb(127, 161, 255);
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .estructura__index__cartones {
+    display: block;
+  }
+  .cualidades {
+    flex-wrap: wrap;
+  }
+  .cualidades .imagen_cualidades {
+    margin-left: 25%;
+  }
+  .corte {
+    display: block;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    grid-template-areas: "texto" "imagenes" "redes";
+  }
+  footer .pie_pagina__texto p {
+    font-size: small;
+  }
+  .pie__pagina__texto {
+    display: block;
+    grid-area: texto;
+    font-size: medium;
+    text-align: center;
+    margin: 2px;
+  }
+  .pie__imagenes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    align-items: center;
+  }
+  .pie__imagenes img {
+    display: block;
+    width: 50px;
+    margin-left: 20%;
+    margin-bottom: 5px;
+  }
+  .pie__redes {
+    display: block;
+    justify-self: center;
+    grid-area: redes;
+  }
+  .pie__redes img {
+    width: 20px;
+    font-size: small;
+  }
+  .pie__redes a {
+    font-size: small;
+  }
+  .pie__redes a img {
+    width: 20px;
+  }
+  /*servicios*/
+  .servicios__subtitulo {
+    color: rgb(127, 161, 255);
+    margin-top: 5%;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  .servicios__tratamientos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .servicios__tratamientos .servicios__tratamientos__texto, .servicios__tratamientos .servicios__tratamientos__texto__online {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .servicios__tratamientos .servicios__tratamientos__imagenes, .servicios__tratamientos .servicios__tratamientos__texto__online .servicios__tratamiento__imagen__online {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+  .servicios__tratamientos .servicios__fisioterapia__imagen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+  /* estilo contacto*/
+  .contenedor__imagen__contacto .texto__imagen__contacto {
+    height: 185%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+  }
+  .contenedor__imagen__contacto .texto__imagen__contacto h2 {
+    width: 135%;
+    font-size: 31px;
+    color: rgb(110, 109, 106);
+  }
+  /* estilo kine-online */
+  #h1kine {
+    font-size: 2rem;
+  }
+  .onlinep {
+    font-size: 1rem;
+    color: rgb(127, 161, 255);
+    margin: 6%;
+  }
+  .servicios__tratamientos .servicios__tratamiento__imagen__online {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  .servicios__tratamientos .servicios__tratamiento__imagen__online img {
+    width: 99%;
+    margin: 1%;
+    text-align: center;
+  }
+  .form__online {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(127, 161, 255);
+    color: aliceblue;
+  }
+  .form__online form {
+    margin: 4%;
+  }
+  /* estilo faqs */
+  .h1faqs {
+    font-size: 2rem;
+  }
+  article h4 {
+    color: rgb(127, 161, 255);
+    margin-left: 2%;
+  }
+  article .seccion__preguntas {
+    display: block;
+  }
+  article .seccion__preguntas .seccion__preguntas__imagen {
+    display: block;
+  }
+  article .preguntas__texto {
+    display: block;
+    width: 100%;
+  }
+  article .preguntas__texto p {
+    margin: 2px;
+    padding: 5px;
+    text-align: justify;
+  }
+}
 .contenedor__imagen__contacto {
   display: inline-block;
   position: relative;
@@ -525,7 +841,7 @@ footer {
 .contenedor__imagen__contacto .texto__imagen__contacto {
   position: absolute;
   text-align: center;
-  height: 180%;
+  height: 160%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -824,6 +1140,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 2%;
 }
 .servicios__tratamientos .servicios__tratamientos__texto__online {
   justify-content: center;
@@ -868,7 +1185,147 @@ footer {
   width: 70%;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 330px) {
+  header .barra_nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  header #logo_principal {
+    width: 100%;
+    text-align: center;
+  }
+  #h1home {
+    font-size: 2rem;
+    color: aliceblue;
+    background-color: rgb(127, 161, 255);
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .estructura__index__cartones {
+    display: block;
+  }
+  .cualidades {
+    flex-wrap: wrap;
+  }
+  .cualidades .imagen_cualidades {
+    margin-left: 25%;
+  }
+  .corte {
+    display: block;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    grid-template-areas: "texto" "imagenes" "redes";
+  }
+  footer .pie_pagina__texto p {
+    font-size: small;
+  }
+  /*estilo contacto*/
+  .contenedor__imagen__contacto .texto__imagen__contacto {
+    height: 200%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+  }
+  .contenedor__imagen__contacto .texto__imagen__contacto h2 {
+    width: 125%;
+    font-size: 21px;
+    color: rgb(110, 109, 106);
+  }
+  /*servicios*/
+  .servicios__subtitulo {
+    color: rgb(127, 161, 255);
+    margin-top: 5%;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  .servicios__tratamientos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .servicios__tratamientos .servicios__tratamientos__texto, .servicios__tratamientos .servicios__tratamientos__texto__online {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .servicios__tratamientos .servicios__tratamientos__imagenes, .servicios__tratamientos .servicios__tratamientos__texto__online .servicios__tratamiento__imagen__online {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+  .servicios__tratamientos .servicios__fisioterapia__imagen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+  /* estilo kine-online */
+  #h1kine {
+    font-size: 2rem;
+  }
+  .onlinep {
+    font-size: 1rem;
+    color: rgb(127, 161, 255);
+    margin: 6%;
+  }
+  .servicios__tratamientos .servicios__tratamiento__imagen__online {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  .servicios__tratamientos .servicios__tratamiento__imagen__online img {
+    width: 99%;
+    margin: 1%;
+    text-align: center;
+  }
+  .form__online {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(127, 161, 255);
+    color: aliceblue;
+  }
+  .form__online form {
+    margin: 4%;
+  }
+  /* estilo faqs */
+  .h1faqs {
+    font-size: 2rem;
+  }
+  article h4 {
+    color: rgb(127, 161, 255);
+    margin-left: 2%;
+  }
+  article .seccion__preguntas {
+    display: block;
+  }
+  article .seccion__preguntas .seccion__preguntas__imagen {
+    display: block;
+  }
+  article .preguntas__texto {
+    display: block;
+    width: 100%;
+  }
+  article .preguntas__texto p {
+    margin: 2px;
+    padding: 5px;
+    text-align: justify;
+  }
+}
+@media screen and (min-width: 331px) and (max-width: 480px) {
   header .barra_nav {
     display: flex;
     flex-direction: column;
@@ -979,13 +1436,13 @@ footer {
   }
   /* página contacto*/
   .contenedor__imagen__contacto .texto__imagen__contacto {
-    height: 186%;
+    height: 175%;
     left: 45%;
     transform: translate(-50%, -50%);
   }
   .contenedor__imagen__contacto .texto__imagen__contacto h2 {
     width: 125%;
-    font-size: 23px;
+    font-size: 22px;
     color: rgb(110, 109, 106);
   }
   /* estilo faqs */
@@ -1042,5 +1499,181 @@ footer {
   }
   .form__online form {
     margin: 4%;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 831px) {
+  header .barra_nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  header #logo_principal {
+    width: 100%;
+    text-align: center;
+  }
+  #h1home {
+    font-size: 2rem;
+    color: aliceblue;
+    background-color: rgb(127, 161, 255);
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .estructura__index__cartones {
+    display: block;
+  }
+  .cualidades {
+    flex-wrap: wrap;
+  }
+  .cualidades .imagen_cualidades {
+    margin-left: 25%;
+  }
+  .corte {
+    display: block;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    grid-template-areas: "texto" "imagenes" "redes";
+  }
+  footer .pie_pagina__texto p {
+    font-size: small;
+  }
+  .pie__pagina__texto {
+    display: block;
+    grid-area: texto;
+    font-size: medium;
+    text-align: center;
+    margin: 2px;
+  }
+  .pie__imagenes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    align-items: center;
+  }
+  .pie__imagenes img {
+    display: block;
+    width: 50px;
+    margin-left: 20%;
+    margin-bottom: 5px;
+  }
+  .pie__redes {
+    display: block;
+    justify-self: center;
+    grid-area: redes;
+  }
+  .pie__redes img {
+    width: 20px;
+    font-size: small;
+  }
+  .pie__redes a {
+    font-size: small;
+  }
+  .pie__redes a img {
+    width: 20px;
+  }
+  /*servicios*/
+  .servicios__subtitulo {
+    color: rgb(127, 161, 255);
+    margin-top: 5%;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  .servicios__tratamientos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .servicios__tratamientos .servicios__tratamientos__texto, .servicios__tratamientos .servicios__tratamientos__texto__online {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .servicios__tratamientos .servicios__tratamientos__imagenes, .servicios__tratamientos .servicios__tratamientos__texto__online .servicios__tratamiento__imagen__online {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+  .servicios__tratamientos .servicios__fisioterapia__imagen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+  /* estilo contacto*/
+  .contenedor__imagen__contacto .texto__imagen__contacto {
+    height: 185%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+  }
+  .contenedor__imagen__contacto .texto__imagen__contacto h2 {
+    width: 135%;
+    font-size: 31px;
+    color: rgb(110, 109, 106);
+  }
+  /* estilo kine-online */
+  #h1kine {
+    font-size: 2rem;
+  }
+  .onlinep {
+    font-size: 1rem;
+    color: rgb(127, 161, 255);
+    margin: 6%;
+  }
+  .servicios__tratamientos .servicios__tratamiento__imagen__online {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  .servicios__tratamientos .servicios__tratamiento__imagen__online img {
+    width: 99%;
+    margin: 1%;
+    text-align: center;
+  }
+  .form__online {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(127, 161, 255);
+    color: aliceblue;
+  }
+  .form__online form {
+    margin: 4%;
+  }
+  /* estilo faqs */
+  .h1faqs {
+    font-size: 2rem;
+  }
+  article h4 {
+    color: rgb(127, 161, 255);
+    margin-left: 2%;
+  }
+  article .seccion__preguntas {
+    display: block;
+  }
+  article .seccion__preguntas .seccion__preguntas__imagen {
+    display: block;
+  }
+  article .preguntas__texto {
+    display: block;
+    width: 100%;
+  }
+  article .preguntas__texto p {
+    margin: 2px;
+    padding: 5px;
+    text-align: justify;
   }
 }/*# sourceMappingURL=estilo.css.map */
