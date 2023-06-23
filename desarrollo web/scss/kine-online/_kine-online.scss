@@ -4,6 +4,7 @@
     margin-top: 0;
     padding-top: 2%;
     padding-bottom: 2%;
+    font-size: 2rem;
 }
 
 .online__subtitulo {
@@ -21,9 +22,8 @@
         align-items: center;
         width: 70%;
         p {
-            font-size: x-large;
-            color: aliceblue;
-            background-color: rgb(127, 161, 255);
+            font-size: 1rem;
+            color: rgb(127, 161, 255);
             margin: 2%;
             padding: 2%;
         }
@@ -41,7 +41,7 @@
 }
 
 .onlinep {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: rgb(127, 161, 255);
     margin: 2%;
 }

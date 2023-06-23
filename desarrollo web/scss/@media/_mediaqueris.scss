@@ -116,8 +116,13 @@
     /* página contacto*/
     .contenedor__imagen__contacto {
         .texto__imagen__contacto {
+            height: 186%;
+            left: 45%;
+            transform: translate(-50%, -50%);
             h2 {
+                width: 125%;
                 font-size: 23px;
+                color: rgb(110 109 106);
             }
         }
     }
@@ -151,9 +156,9 @@
         font-size: 2rem;
     }
     .onlinep {
-        font-size: 1.5rem;
+        font-size: 1rem;
         color: rgb(127, 161, 255);
-        margin: 2%;
+        margin: 6%;
     }
     .servicios__tratamientos {
         .servicios__tratamiento__imagen__online {
