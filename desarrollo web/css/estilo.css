@@ -383,13 +383,13 @@ footer {
   }
   /*estilo contacto*/
   .contenedor__imagen__contacto .texto__imagen__contacto {
-    height: 200%;
+    height: 185%;
     left: 45%;
     transform: translate(-50%, -50%);
   }
   .contenedor__imagen__contacto .texto__imagen__contacto h2 {
     width: 125%;
-    font-size: 21px;
+    font-size: 19px;
     color: rgb(110, 109, 106);
   }
   /*servicios*/
@@ -635,7 +635,7 @@ footer {
   }
   .servicios__tratamientos .servicios__tratamiento__imagen__online {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -677,7 +677,7 @@ footer {
     margin-bottom: 5%;
   }
   .estructura__index__cartones {
-    display: block;
+    display: flex;
   }
   .cualidades {
     flex-wrap: wrap;
@@ -786,9 +786,13 @@ footer {
     color: rgb(127, 161, 255);
     margin: 6%;
   }
+  .servicios__tratamientos {
+    display: flex;
+    flex-direction: row-reverse;
+  }
   .servicios__tratamientos .servicios__tratamiento__imagen__online {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -1138,6 +1142,7 @@ footer {
 
 .servicios__tratamientos {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
   margin: 2%;
@@ -1227,13 +1232,13 @@ footer {
   }
   /*estilo contacto*/
   .contenedor__imagen__contacto .texto__imagen__contacto {
-    height: 200%;
+    height: 185%;
     left: 45%;
     transform: translate(-50%, -50%);
   }
   .contenedor__imagen__contacto .texto__imagen__contacto h2 {
     width: 125%;
-    font-size: 21px;
+    font-size: 19px;
     color: rgb(110, 109, 106);
   }
   /*servicios*/
@@ -1479,7 +1484,7 @@ footer {
   }
   .servicios__tratamientos .servicios__tratamiento__imagen__online {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -1521,7 +1526,7 @@ footer {
     margin-bottom: 5%;
   }
   .estructura__index__cartones {
-    display: block;
+    display: flex;
   }
   .cualidades {
     flex-wrap: wrap;
@@ -1630,9 +1635,13 @@ footer {
     color: rgb(127, 161, 255);
     margin: 6%;
   }
+  .servicios__tratamientos {
+    display: flex;
+    flex-direction: row-reverse;
+  }
   .servicios__tratamientos .servicios__tratamiento__imagen__online {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     width: 100%;
