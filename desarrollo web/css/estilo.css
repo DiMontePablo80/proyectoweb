@@ -788,7 +788,7 @@ footer {
   }
   .servicios__tratamientos {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
   }
   .servicios__tratamientos .servicios__tratamiento__imagen__online {
     display: flex;
@@ -1637,7 +1637,7 @@ footer {
   }
   .servicios__tratamientos {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
   }
   .servicios__tratamientos .servicios__tratamiento__imagen__online {
     display: flex;
