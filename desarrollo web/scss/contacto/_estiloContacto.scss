@@ -1,31 +1,53 @@
+@import "../general";
 .contenedor__imagen__contacto {
+    @extend .imagen__principal__cabecera;
     display: inline-block;
     position: relative;
     text-align: center;
     .texto__imagen__contacto {
         position: absolute;
         text-align: center;
-        height: 160%;
+        height: 180%;
         left: 50%;
         transform: translate(-50%, -50%);
         h2 {
-            width: 125%;
-            font-size: 50px;
+            width: 100%;
+            font-size: 36px;
             color: rgb(110 109 106);
         }
     }
 }
 
-.formulario__contacto {
+.formulario {
     display: flex;
-    background-color: rgb(241, 240, 238);
-    .formContacto {
-        width: 60%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: auto;
+    form {
+        width: 45%;
+        margin-right: 2%;
+        div {
+            .form-label {
+                color: blue
+            }
+        }
+        buttom {
+            color: blue;
+        }
     }
-    .formulario__ubicaciones {
+    .ubicacion {
         width: 40%;
-        display: block;
-        margin-left: 20%;
-        margin-bottom: 3%;
+        padding-left: 2%;
+        p {
+            color: blue;
+            font-size: large;
+            i {
+                span {
+                    padding-left: 10px;
+                }
+            }
+        }
     }
 }
